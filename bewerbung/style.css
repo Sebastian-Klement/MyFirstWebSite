@@ -1,8 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+.container {
+  width: 75rem;
+  margin: 0px auto;
+}
+
 .header {
-  padding: 80px;
-  text-align: center;
-  background: #1abc9c;
+  height: 40rem;
+  background-image: url("./img/Sebastian-35.jpg");
+  background-repeat: no-repeat;
+  background-position:  center center;
+  background-size: cover;
   color: white;
+  text-align: center;
 }
 
 .header h1 {
