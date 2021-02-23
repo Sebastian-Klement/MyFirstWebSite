@@ -60,6 +60,8 @@ html {
   position: relative;
   overflow: hidden;
 }
+
+/** 1200px oder schmaler */
 @media (max-width: 75em) {
   .header {
     height: calc(18rem + 32vw);
@@ -110,6 +112,19 @@ html {
   border-bottom: 0.15rem solid rgb(55, 55, 55);
 }
 
+.nav__list-item--menu .nav__list-item-link {
+  margin-top: 0.4rem;
+}
+
+.nav__list-item--menu .nav__list-item-link:hover {
+  border-bottom: none;
+  color: rgb(200, 200, 200);
+}
+
+.nav__list-item-link--logo {
+  margin-top: 0.9rem;
+}
+
 .nav__list-item-link--logo:hover {
   border-bottom: none;
   color: rgb(200, 200, 200);
@@ -151,5 +166,36 @@ html {
   100% {
     opacity: 1;
     font-weight: 700;
+  }
+}
+
+
+@media (max-width: 62em) {
+  .header__heading-main {
+      font-size: 5rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .header__heading-main {
+      font-size: 3rem;
+  }
+}
+
+
+.header__heading-sub {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.25rem;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0 0 0.5rem black;
+  z-index: 1;
+  position: relative;
+}
+@media (max-width: 48em) {
+  .header__heading-sub {
+      font-size: 1rem;
   }
 }
