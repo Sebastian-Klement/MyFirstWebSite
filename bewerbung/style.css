@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("./font/Jost-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Jost";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("./font/Jost-VariableFont_wght.ttf") format("truetype");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -54,34 +70,47 @@ html {
   border-bottom: 0.2rem solid rgb(55, 55, 55);
 }
 
-.begruessung {
-  color: white;
+
+.nav__list-item-link--logo:hover {
+  border-bottom: none;
+  color: rgb(200, 200, 200);
+}
+
+.nav__list-item-logo {
+  width: 4rem;
+  height: 4rem;
+}
+.nav__list-item-logo {
+  fill: currentColor;
+}
+
+.header__heading-container {
+  clear: both;
+}
+
+.header__heading-main {
+  font-weight: 700;
+  padding-top: 12rem;
+  line-height: 92%;
+  font-size: 6rem;
   text-align: center;
-}
-.begruessung--heading {
-  margin-bottom: 5px;
-  text-shadow: 0px 0px 50px black;
-}
-
-/* .navbar {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.navbar a {
-  float: left;
-  display: block;
   color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+  animation-name: header__heading-main-font-weight;
+  animation-delay: 0.  5s;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
 }
 
-.navbar a.right {
-  float: right;
+@keyframes header__heading-main-font-weight {
+  0% {
+    opacity: 0.25;
+    font-weight: 100;
+  }
+  100% {
+    opacity: 1;
+    font-weight: 700;
+  }
 }
-
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
-} */
