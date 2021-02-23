@@ -22,15 +22,32 @@
 
 html {
   font-size: 100%;
+  font-family: "Jost", sans-serif;
+}
+
+/** Breakpoints */
+
+/** 1200px oder schmaler */
+@media (max-width: 75em) {
+}
+/** 992px oder schmaler */
+@media (max-width: 62em) {
+}
+/** 768px oder schmaler */
+@media (max-width: 48em) {
+}
+/** 576px oder schmaler */
+@media (max-width: 36em) {
 }
 
 .container {
-  width: 75rem;
+  max-width: 75rem;
   margin: 0px auto;
 }
 
 .header {
-  height: 40rem;
+  height: 35rem;
+  min-height: calc(13rem + 32vw);
   background-image: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.25),
@@ -40,36 +57,58 @@ html {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  color: white;
-  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 75em) {
+  .header {
+    height: calc(18rem + 32vw);
+  }
 }
 
-.header h1 {
-  font-size: 40px;
+.header__container {
+  position: relative;
+}
+
+.icon {
+  fill: currentColor;
+  height: 1em;
+  vertical-align: middle;
+  position: relative;
+  top: -0.075em;
 }
 
 .nav__list-item {
   list-style-type: none;
-  display: inline-block;
-  float: none;
+  display: block;
+  float: left;
+}
 
+@media (max-width: 62em) {
+  .nav__list-item--mobile-hidden {
+    display: none;
+  }
+}
+
+.nav__list-item--menu {
+  float: right;
+  font-size: 3rem;
 }
 
 .nav__list-item-link {
   color: white;
-  font-weight: bold;
   text-decoration: none;
   padding: 0.25rem 0.25rem 0.25rem 0.25rem;
   margin-top: 2rem;
   margin-left: 2rem;
   margin-right: 2rem;
   display: block;
+  text-shadow: 0 0 0.5rem black;
 }
 
 .nav__list-item-link:hover {
-  border-bottom: 0.2rem solid rgb(55, 55, 55);
+  border-bottom: 0.15rem solid rgb(55, 55, 55);
 }
-
 
 .nav__list-item-link--logo:hover {
   border-bottom: none;
