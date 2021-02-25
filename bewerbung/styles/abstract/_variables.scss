@@ -1,12 +1,20 @@
-$color-primary: rgb(55, 56, 57)!default;
+@use "sass:color";
 
-$breakpint-large: 75em!default;
-$breakpint-medium: 62em!default;
-$breakpint-small: 48em!default;
-$breakpint-verySmall: 36em!default;
+$color-primary: rgb(55, 56, 57) !default;
+$color-secondary: rgb(85, 86, 87) !default;
+$color-secondary-light: color.scale($color-secondary, $lightness: 20%) !default;
+
+$breakpint-large: 75em !default;
+$breakpint-medium: 62em !default;
+$breakpint-small: 48em !default;
+$breakpint-verySmall: 36em !default;
 
 // Breakpoints
-@media(max-with: $breakpint-large){}
-@media(max-with: $breakpint-medium){}
-@media(max-with: $breakpint-small){}
-@media(max-with: $breakpint-verySmall){}
+@media (max-width: $breakpint-large) {
+}
+@media (max-width: $breakpint-medium) {
+}
+@media (max-width: $breakpint-small) {
+}
+@media (max-width: $breakpint-verySmall) {
+}
