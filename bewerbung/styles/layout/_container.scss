@@ -5,6 +5,8 @@
   margin: 0px auto;
   padding: 0 2rem;
 
+  @include clearfix;
+
   @media (max-width: $breakpint-small) {
     padding: 0 1rem;
   }

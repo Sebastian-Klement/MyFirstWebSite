@@ -7,7 +7,7 @@ $color-secondary-light: color.scale($color-secondary, $lightness: 20%) !default;
 $breakpint-large: 75em !default;
 $breakpint-medium: 62em !default;
 $breakpint-small: 48em !default;
-$breakpint-verySmall: 36em !default;
+$breakpint-extraSmall: 36em !default;
 
 // Breakpoints
 @media (max-width: $breakpint-large) {
@@ -16,5 +16,5 @@ $breakpint-verySmall: 36em !default;
 }
 @media (max-width: $breakpint-small) {
 }
-@media (max-width: $breakpint-verySmall) {
+@media (max-width: $breakpint-extraSmall) {
 }
