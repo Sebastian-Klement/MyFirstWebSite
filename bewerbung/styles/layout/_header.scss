@@ -1,3 +1,5 @@
+@use "../abstract" as *;
+
 .header {
   height: 35rem;
   min-height: calc(13rem + 32vw);
@@ -6,7 +8,7 @@
       rgba(0, 0, 0, 0.25),
       rgba(0, 0, 0, 0.25)
     ),
-    url("../img/Sebastian-35.jpg");
+    url("../img/header/Sebastian-35.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -14,7 +16,7 @@
   overflow: hidden;
 
   /** 1200px oder schmaler */
-  @media (max-width: 75em) {
+  @media (max-width: $breakpint-large) {
     height: calc(18rem + 32vw);
   }
 }
@@ -39,15 +41,15 @@
 
   animation-name: header__heading-main-font-weight;
   animation-delay: 0.5s;
-  animation-duration: 2s;
+  animation-duration: 5s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: both;
 
-  @media (max-width: 62em) {
+  @media (max-width: $breakpint-medium) {
     font-size: 5rem;
   }
 
-  @media (max-width: 48em) {
+  @media (max-width: $breakpint-small) {
     font-size: 3rem;
   }
 }
@@ -74,7 +76,7 @@
   z-index: 1;
   position: relative;
 
-  @media (max-width: 48em) {
+  @media (max-width: $breakpint-small) {
     font-size: 1rem;
   }
 }

@@ -1,0 +1,12 @@
+$color-primary: rgb(55, 56, 57)!default;
+
+$breakpint-large: 75em!default;
+$breakpint-medium: 62em!default;
+$breakpint-small: 48em!default;
+$breakpint-verySmall: 36em!default;
+
+// Breakpoints
+@media(max-with: $breakpint-large){}
+@media(max-with: $breakpint-medium){}
+@media(max-with: $breakpint-small){}
+@media(max-with: $breakpint-verySmall){}

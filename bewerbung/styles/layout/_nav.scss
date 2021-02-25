@@ -1,10 +1,12 @@
+@use '../abstract/index' as *;
+
 .nav__list-item {
   list-style-type: none;
   display: block;
   float: left;
  
   &--mobile-hidden {
-    @media (max-width: 62em) {
+    @media (max-width: $breakpint-medium) {
       display: none;
     }
   }
@@ -25,7 +27,7 @@
   text-shadow: 0 0 0.5rem black;
 
   &:hover {
-    border-bottom: 0.15rem solid rgb(55, 55, 55);
+    border-bottom: 0.15rem solid $color-primary;
   }
 
   .nav__list-item--menu & {
