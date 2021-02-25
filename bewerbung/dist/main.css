@@ -26,6 +26,12 @@ html {
 .container {
   max-width: 75rem;
   margin: 0px auto;
+  padding: 0 2rem;
+}
+@media (max-width: 48em) {
+  .container {
+    padding: 0 1rem;
+  }
 }
 
 .header {
@@ -136,6 +142,8 @@ html {
 }
 .nav__list-item--menu .nav__list-item-link {
   margin-top: 0.4rem;
+  padding-right: 0;
+  margin-right: 0;
 }
 .nav__list-item--menu .nav__list-item-link:hover {
   border-bottom: none;
@@ -143,6 +151,8 @@ html {
 }
 .nav__list-item-link--logo {
   margin-top: 0.9rem;
+  padding-left: 0;
+  margin-left: 0;
 }
 .nav__list-item-link--logo:hover {
   border-bottom: none;
@@ -161,6 +171,63 @@ html {
   vertical-align: middle;
   position: relative;
   top: -0.075em;
+}
+
+.motivation {
+  margin-top: 3rem;
+}
+
+.motivation__col-txt {
+  float: left;
+  width: 33.3%;
+}
+
+.motivation__txt-heading {
+  margin-top: 4rem;
+  color: #555657;
+  font-weight: 500;
+}
+.motivation__txt-heading::before {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 0.25rem;
+  background-color: #767879;
+  margin-bottom: 0.5rem;
+}
+
+.motivation__txt-paragraph {
+  color: #555657;
+  margin-top: 0.5rem;
+}
+
+.motivation__col-img {
+  float: left;
+  width: 66.6%;
+  position: relative;
+}
+
+.motivation__img {
+  position: absolute;
+  width: 50%;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+}
+.motivation__img--3rd {
+  width: 65%;
+  right: 0rem;
+  z-index: 1;
+}
+.motivation__img--1st {
+  z-index: 2;
+  width: 35%;
+  top: 10rem;
+  left: 15%;
+}
+.motivation__img--2nd {
+  z-index: 3;
+  width: 45%;
+  top: 5rem;
+  left: 40%;
 }
 
 /*# sourceMappingURL=main.css.map */

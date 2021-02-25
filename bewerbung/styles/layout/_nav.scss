@@ -4,7 +4,7 @@
   list-style-type: none;
   display: block;
   float: left;
- 
+
   &--mobile-hidden {
     @media (max-width: $breakpint-medium) {
       display: none;
@@ -32,7 +32,8 @@
 
   .nav__list-item--menu & {
     margin-top: 0.4rem;
-
+    padding-right: 0;
+    margin-right: 0;
     &:hover {
       border-bottom: none;
       color: rgb(200, 200, 200);
@@ -40,6 +41,8 @@
   }
   &--logo {
     margin-top: 0.9rem;
+    padding-left: 0;
+    margin-left: 0;
 
     &:hover {
       border-bottom: none;

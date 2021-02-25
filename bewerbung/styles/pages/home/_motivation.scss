@@ -1,0 +1,59 @@
+@use "../../abstract" as *;
+
+.motivation {
+  margin-top: 3rem;
+}
+
+.motivation__col-txt {
+  float: left;
+  width: 33.3%;
+}
+.motivation__txt-heading {
+  margin-top: 4rem;
+  color: $color-secondary;
+  font-weight: 500;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 0.25rem;
+    background-color: $color-secondary-light;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.motivation__txt-paragraph {
+  color: $color-secondary;
+  margin-top: 0.5rem;
+}
+
+.motivation__col-img {
+  float: left;
+  width: 66.6%;
+  position: relative;
+}
+
+.motivation__img {
+  position: absolute;
+  width: 50%;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+
+  &--3rd {
+    width: 65%;
+    right: 0rem;
+    z-index: 1;
+  }
+  &--1st {
+    z-index: 2;
+    width: 35%;
+    top: 10rem;
+    left: 15%;
+  }
+  &--2nd {
+    z-index: 3;
+    width: 45%;
+    top: 5rem;
+    left: 40%;
+  }
+}
