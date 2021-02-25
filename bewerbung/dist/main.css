@@ -28,6 +28,11 @@ html {
   margin: 0px auto;
   padding: 0 2rem;
 }
+.container::after {
+  display: block;
+  clear: both;
+  content: "";
+}
 @media (max-width: 48em) {
   .container {
     padding: 0 1rem;
@@ -47,7 +52,7 @@ html {
 }
 @media (max-width: 75em) {
   .header {
-    height: calc(18rem + 32vw);
+    height: calc(20rem + 32vw);
   }
 }
 
@@ -180,12 +185,33 @@ html {
 .motivation__col-txt {
   float: left;
   width: 33.3%;
+  padding-right: 4rem;
+}
+@media (max-width: 75em) {
+  .motivation__col-txt {
+    padding-right: 3rem;
+  }
+}
+@media (max-width: 62em) {
+  .motivation__col-txt {
+    padding-right: 0;
+    width: 50%;
+  }
+}
+@media (max-width: 48em) {
+  .motivation__col-txt {
+    width: 100%;
+    float: none;
+    padding-bottom: 2rem;
+  }
 }
 
 .motivation__txt-heading {
   margin-top: 4rem;
   color: #555657;
   font-weight: 500;
+  font-size: 2rem;
+  hyphens: auto;
 }
 .motivation__txt-heading::before {
   content: "";
@@ -199,35 +225,74 @@ html {
 .motivation__txt-paragraph {
   color: #555657;
   margin-top: 0.5rem;
+  font-size: 1.1rem;
 }
 
 .motivation__col-img {
   float: left;
   width: 66.6%;
+  height: clamp(10rem, calc(35vw + 10rem), 36rem);
   position: relative;
+}
+@media (max-width: 62em) {
+  .motivation__col-img {
+    width: 50%;
+    height: clamp(10rem, calc(25vw + 10rem), 36rem);
+  }
+}
+@media (max-width: 48em) {
+  .motivation__col-img {
+    width: 80%;
+    float: none;
+    margin: 0 auto;
+    height: clamp(10rem, calc(40vw + 10rem), 36rem);
+  }
+}
+@media (max-width: 36em) {
+  .motivation__col-img {
+    width: 90%;
+    height: clamp(10rem, calc(45vw + 10rem), 36rem);
+  }
 }
 
 .motivation__img {
   position: absolute;
   width: 50%;
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+  box-sizing: content-box;
+  filter: grayscale(75%);
+  transform: scale(1);
+  transition: filter ease-in-out 0.5s, transform ease-in-out 0.5s;
 }
 .motivation__img--3rd {
-  width: 65%;
+  width: 60%;
   right: 0rem;
   z-index: 1;
 }
+.motivation__img--4th {
+  width: 60%;
+  right: 3rem;
+  top: 18rem;
+  z-index: 3;
+}
 .motivation__img--1st {
-  z-index: 2;
-  width: 35%;
+  width: 40%;
   top: 10rem;
   left: 15%;
+  z-index: 2;
 }
 .motivation__img--2nd {
-  z-index: 3;
-  width: 45%;
+  width: 40%;
   top: 5rem;
   left: 40%;
+  z-index: 4;
+}
+.motivation__img:hover {
+  border: 0.3rem solid #373839;
+  padding: 0.3rem;
+  filter: grayscale(0%);
+  transform: scale(1.25);
+  z-index: 5;
 }
 
 /*# sourceMappingURL=main.css.map */

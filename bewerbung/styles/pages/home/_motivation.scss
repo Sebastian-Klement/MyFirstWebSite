@@ -7,12 +7,27 @@
 .motivation__col-txt {
   float: left;
   width: 33.3%;
+  padding-right: 4rem;
+
+  @media (max-width: $breakpint-large) {
+    padding-right: 3rem;
+  }
+  @media (max-width: $breakpint-medium) {
+    padding-right: 0;
+    width: 50%;
+  }
+  @media (max-width: $breakpint-small) {
+    width: 100%;
+    float: none;
+    padding-bottom:  2rem;
+  }
 }
 .motivation__txt-heading {
   margin-top: 4rem;
   color: $color-secondary;
   font-weight: 500;
-
+  font-size: 2rem;
+  hyphens: auto;
   &::before {
     content: "";
     display: block;
@@ -26,34 +41,75 @@
 .motivation__txt-paragraph {
   color: $color-secondary;
   margin-top: 0.5rem;
+  font-size: 1.1rem;
 }
 
 .motivation__col-img {
   float: left;
   width: 66.6%;
+  height: clamp(10rem, calc(35vw + 10rem), 36rem);
   position: relative;
+
+  @media (max-width: $breakpint-medium) {
+    width: 50%;
+    height: clamp(10rem, calc(25vw + 10rem), 36rem);
+
+  }
+  @media (max-width: $breakpint-small) {
+    width: 80%;
+    float: none;
+    margin: 0 auto;
+    height: clamp(10rem, calc(40vw + 10rem), 36rem);
+  }
+  @media (max-width: $breakpint-extraSmall) {
+    width: 90%;
+    height: clamp(10rem, calc(45vw + 10rem), 36rem);
+  }
 }
 
 .motivation__img {
   position: absolute;
   width: 50%;
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+  box-sizing: content-box;
+  filter: grayscale(75%);
+  transform: scale(1);
+  transition: filter ease-in-out 0.5s, transform ease-in-out 0.5s;
 
   &--3rd {
-    width: 65%;
+    width: 60%;
     right: 0rem;
     z-index: 1;
   }
+  &--4th {
+    width: 60%;
+    right: 3rem;
+    top: 18rem;
+    z-index: 3;
+  }
   &--1st {
-    z-index: 2;
-    width: 35%;
+    width: 40%;
     top: 10rem;
     left: 15%;
+    z-index: 2;
+
+    // &:hover {
+    //   filter: sepia(75%);
+    // }
   }
   &--2nd {
-    z-index: 3;
-    width: 45%;
+    width: 40%;
     top: 5rem;
     left: 40%;
+    z-index: 4;
+  }
+
+  &:hover {
+    border: 0.3rem solid $color-primary;
+    padding: 0.3rem;
+    filter: grayscale(0%);
+    transform: scale(1.25);
+
+    z-index: 5;
   }
 }
