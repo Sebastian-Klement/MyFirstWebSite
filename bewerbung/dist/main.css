@@ -180,6 +180,7 @@ html {
 
 .motivation {
   margin-top: 3rem;
+  margin-bottom: 4rem;
 }
 
 .motivation__col-txt {
@@ -265,24 +266,25 @@ html {
   transition: filter ease-in-out 0.5s, transform ease-in-out 0.5s;
 }
 .motivation__img--3rd {
-  width: 60%;
-  right: 0rem;
+  width: 55%;
+  right: 7rem;
+  top: 2rem;
   z-index: 1;
 }
 .motivation__img--4th {
-  width: 60%;
-  right: 3rem;
-  top: 18rem;
+  width: 55%;
+  right: 4rem;
+  top: 14rem;
   z-index: 3;
 }
 .motivation__img--1st {
-  width: 40%;
-  top: 10rem;
-  left: 15%;
+  width: 35%;
+  top: 11rem;
+  left: 25%;
   z-index: 2;
 }
 .motivation__img--2nd {
-  width: 40%;
+  width: 35%;
   top: 5rem;
   left: 40%;
   z-index: 4;
@@ -293,6 +295,42 @@ html {
   filter: grayscale(0%);
   transform: scale(1.25);
   z-index: 5;
+}
+
+.tour {
+  height: 30rem;
+  position: relative;
+  background-color: #191a1b;
+}
+
+.tour::before {
+  content: "Lorem Ipsum Dolor";
+  position: absolute;
+  text-transform: uppercase;
+  text-shadow: 0 0 1px #767879;
+  text-align: center;
+  color: #191a1b;
+  font-size: 6rem;
+  font-weight: bold;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.tour__container {
+  position: relative;
+  z-index: 1;
+}
+
+.tour__heading {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=main.css.map */
