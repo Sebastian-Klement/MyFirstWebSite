@@ -2,6 +2,7 @@
 
 .motivation {
   margin-top: 3rem;
+  margin-bottom: 4rem;
 }
 
 .motivation__col-txt {
@@ -77,20 +78,21 @@
   transition: filter ease-in-out 0.5s, transform ease-in-out 0.5s;
 
   &--3rd {
-    width: 60%;
-    right: 0rem;
+    width: 55%;
+    right: 7rem;
+    top: 2rem;
     z-index: 1;
   }
   &--4th {
-    width: 60%;
-    right: 3rem;
-    top: 18rem;
+    width: 55%;
+    right: 4rem;
+    top: 14rem;
     z-index: 3;
   }
   &--1st {
-    width: 40%;
-    top: 10rem;
-    left: 15%;
+    width: 35%;
+    top: 11rem;
+    left: 25%;
     z-index: 2;
 
     // &:hover {
@@ -98,7 +100,7 @@
     // }
   }
   &--2nd {
-    width: 40%;
+    width: 35%;
     top: 5rem;
     left: 40%;
     z-index: 4;

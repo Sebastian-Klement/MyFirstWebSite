@@ -3,6 +3,8 @@
 $color-primary: rgb(55, 56, 57) !default;
 $color-secondary: rgb(85, 86, 87) !default;
 $color-secondary-light: color.scale($color-secondary, $lightness: 20%) !default;
+$color-secondary-dark: rgb(25,26,27)!default;
+
 
 $breakpint-large: 75em !default;
 $breakpint-medium: 62em !default;
