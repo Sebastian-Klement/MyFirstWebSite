@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Jost";
   font-style: normal;
@@ -58,6 +59,19 @@ html {
 
 .header__container {
   position: relative;
+  max-width: 75rem;
+  margin: 0px auto;
+  padding: 0 2rem;
+}
+.header__container::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+@media (max-width: 48em) {
+  .header__container {
+    padding: 0 1rem;
+  }
 }
 
 .header__heading-container {
@@ -298,39 +312,105 @@ html {
 }
 
 .tour {
-  height: 30rem;
+  padding-bottom: 5rem;
   position: relative;
   background-color: #191a1b;
 }
 
 .tour::before {
-  content: "Lorem Ipsum Dolor";
+  content: "Nürnberg";
   position: absolute;
   text-transform: uppercase;
   text-shadow: 0 0 1px #767879;
   text-align: center;
   color: #191a1b;
-  font-size: 6rem;
+  font-size: 7rem;
   font-weight: bold;
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 0;
 }
 
 .tour__container {
   position: relative;
   z-index: 1;
+  max-width: 75rem;
+  margin: 0px auto;
+  padding: 0 2rem;
+}
+.tour__container::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+@media (max-width: 48em) {
+  .tour__container {
+    padding: 0 1rem;
+  }
 }
 
 .tour__heading {
   color: white;
   text-transform: uppercase;
   font-weight: 500;
-  letter-spacing: 0.2em;
+  letter-spacing: 1.5em;
   text-align: center;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  z-index: 1;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  font-size: 4rem;
+}
+
+.tour__cards {
+  display: flex;
+}
+
+.tour__card {
+  width: 20%;
+  position: relative;
+  height: 20rem;
+  overflow: hidden;
+}
+
+.tour__card-img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.tour__card-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  padding: 1rem;
+}
+
+.tour__card-heading {
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.tour__card-location {
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+  display: flex;
+  border-bottom: 0.25rem solid #555657;
+}
+
+.tour__card-location-text {
+  line-height: 1.7rem;
+  padding-left: 0.2rem;
+}
+
+.tour__card-location-icon {
+  font-size: 1.3rem;
+}
+
+.tour__card-decicion {
+  font-size: 0.9rem;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -23,6 +23,8 @@
 
 .header__container {
   position: relative;
+
+  @include make-container();
 }
 
 .header__heading-container {
