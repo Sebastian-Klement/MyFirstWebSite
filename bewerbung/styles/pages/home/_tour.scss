@@ -1,5 +1,7 @@
 @use "../../abstract" as *;
 
+$-animation-duration: 0.25s;
+
 .tour {
   padding-bottom: 5rem;
   position: relative;
@@ -9,17 +11,19 @@
 .tour::before {
   content: "Nürnberg";
   position: absolute;
-  letter-spacing: 3rem;
   text-transform: uppercase;
   text-shadow: 0 0 1px $color-secondary-light;
   text-align: center;
   color: $color-secondary-dark;
-  font-size: 7rem;
+  font-size: min(calc(100vw / 9), 10rem);
   font-weight: bold;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 0;
+
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .tour__container {
@@ -33,27 +37,37 @@
   color: white;
   text-transform: uppercase;
   font-weight: 500;
-  letter-spacing: 1.5em;
+  letter-spacing: 2rem;
   text-align: center;
-  padding: 4rem 0 4rem 3rem;
-  font-size: 4rem;
+  padding: 4rem 0 1rem 1rem;
+  //font-size: 4rem;
+  font-size: min(calc(100vw / 10), 9rem);
+
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .tour__cards {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .tour__card {
-  width: 20%;
+  flex: 0 0 (71rem/5);
   height: 19rem;
   position: relative;
   overflow: hidden;
-
-  transition: transform 1s ease-in-out;
+  margin-top: 3rem;
+  transition: transform $-animation-duration ease-in-out,
+    z-index $-animation-duration linear;
+  z-index: 0;
 
   &:hover {
     transform: scale(1.2);
-    z-index: 3;
+    transition: transform $-animation-duration ease-in-out, 0s linear;
+
+    z-index: 10;
   }
 }
 
@@ -69,7 +83,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 3rem 1rem 0 1rem;
+  padding: 3.1rem 1rem 0 1rem;
   color: white;
   text-shadow: 0 0 0.125rem black;
   background-image: linear-gradient(
@@ -89,6 +103,9 @@
 .tour__card-heading {
   font-size: 1.5rem;
   margin-bottom: 0.3rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .tour__card-location {
@@ -101,6 +118,10 @@
 .tour__card-location-text {
   line-height: 1.7rem;
   padding-left: 0.2rem;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .tour__card-location-icon {

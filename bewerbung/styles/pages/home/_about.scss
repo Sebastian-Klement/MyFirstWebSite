@@ -1,0 +1,80 @@
+@use "../../abstract" as *;
+
+.about {
+  background-color: white;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.about__img {
+  $-img-size: 32.5rem;
+
+  width: $-img-size;
+  height: $-img-size;
+  object-fit: cover;
+  float: left;
+  margin-right: 4rem;
+  border-radius: 10000px;
+  shape-outside: circle(15rem at 50% 50%);
+
+  @media (max-width: $breakpint-large) {
+    width: $-img-size * 0.9;
+    height: $-img-size * 0.9;
+  }
+  @media (max-width: $breakpint-medium) {
+    width: $-img-size * 0.8;
+    height: $-img-size * 0.8;
+  }
+  @media (max-width: $breakpint-small) {
+    width: $-img-size * 0.5;
+    height: $-img-size * 0.5;
+  }
+  @media (max-width: $breakpint-extraSmall) {
+    width: $-img-size * 0.4;
+    height: $-img-size * 0.4;
+  }
+}
+
+.about__heading {
+  text-transform: uppercase;
+  color: $color-secondary;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.about__text {
+  color: black;
+  padding-top: 3rem;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    height: 0.25rem;
+    width: 4rem;
+    margin-left: 1rem;
+    background-color: $color-secondary;
+  }
+
+  @media (max-width: $breakpint-large) {
+    padding-top: 1rem;
+  }
+}
+
+.about__paragraph {
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.about__quote {
+  font-style: italic;
+
+  &::before {
+    content: '"';
+  }
+
+  &::after {
+    content: '"';
+  }
+}
