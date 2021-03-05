@@ -489,6 +489,15 @@ html {
   margin-bottom: 1.5rem;
 }
 
+.about__subheading {
+  text-transform: uppercase;
+  color: #555657;
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
 .about__text {
   color: #555657;
   padding-top: 3rem;
@@ -507,6 +516,14 @@ html {
     padding-top: 1rem;
   }
 }
+.about__text::after {
+  content: "";
+  display: inline-block;
+  height: 0.25rem;
+  width: 4rem;
+  margin-left: 1rem;
+  background-color: #555657;
+}
 
 .about__paragraph {
   font-weight: 300;
@@ -517,6 +534,7 @@ html {
   font-style: italic;
   font-weight: 200;
   font-size: 0.95rem;
+  margin-bottom: 1.5rem;
 }
 .about__quote::before {
   content: '"';
