@@ -1,6 +1,6 @@
 @use "../../abstract" as *;
 
-$-animation-duration: 0.25s;
+$-animation-duration: 1s;
 
 .tour {
   padding-bottom: 5rem;
@@ -37,10 +37,9 @@ $-animation-duration: 0.25s;
   color: white;
   text-transform: uppercase;
   font-weight: 500;
-  letter-spacing: 2rem;
+  //letter-spacing: 2rem;
   text-align: center;
   padding: 4rem 0 1rem 1rem;
-  //font-size: 4rem;
   font-size: min(calc(100vw / 10), 9rem);
 
   white-space: nowrap;
@@ -65,7 +64,7 @@ $-animation-duration: 0.25s;
 
   &:hover {
     transform: scale(1.2);
-    transition: transform $-animation-duration ease-in-out, 0s linear;
+    transition: transform $-animation-duration ease-in-out, 1s linear;
 
     z-index: 10;
   }
@@ -103,6 +102,7 @@ $-animation-duration: 0.25s;
 .tour__card-heading {
   font-size: 1.5rem;
   margin-bottom: 0.3rem;
+
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
