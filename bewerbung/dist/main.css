@@ -599,36 +599,38 @@ html {
 }
 
 .about__img {
-  width: 32.5rem;
-  height: 32.5rem;
+  width: 30rem;
+  height: 30rem;
   object-fit: cover;
   float: left;
   margin-right: 4rem;
   border-radius: 10000px;
   shape-outside: circle(15rem at 50% 50%);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+  filter: grayscale(50%) contrast(150%) brightness(60%);
 }
 @media (max-width: 75em) {
   .about__img {
-    width: 29.25rem;
-    height: 29.25rem;
+    width: 27rem;
+    height: 27rem;
   }
 }
 @media (max-width: 62em) {
   .about__img {
-    width: 26rem;
-    height: 26rem;
+    width: 24rem;
+    height: 24rem;
   }
 }
 @media (max-width: 48em) {
   .about__img {
-    width: 16.25rem;
-    height: 16.25rem;
+    width: 15rem;
+    height: 15rem;
   }
 }
 @media (max-width: 36em) {
   .about__img {
-    width: 13rem;
-    height: 13rem;
+    width: 12rem;
+    height: 12rem;
   }
 }
 
@@ -652,7 +654,7 @@ html {
 
 .about__text {
   color: #555657;
-  padding-top: 3rem;
+  padding-top: 1rem;
   text-shadow: 1rem;
 }
 .about__text::before {

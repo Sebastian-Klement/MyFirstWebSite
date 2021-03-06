@@ -7,7 +7,7 @@
 }
 
 .about__img {
-  $-img-size: 32.5rem;
+  $-img-size: 30rem;
 
   width: $-img-size;
   height: $-img-size;
@@ -16,6 +16,10 @@
   margin-right: 4rem;
   border-radius: 10000px;
   shape-outside: circle(15rem at 50% 50%);
+
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+
+  filter: grayscale(50%) contrast(150%) brightness(60%);
 
   @media (max-width: $breakpint-large) {
     width: $-img-size * 0.9;
@@ -55,7 +59,7 @@
 
 .about__text {
   color: $color-secondary;
-  padding-top: 3rem;
+  padding-top: 1rem;
   text-shadow: 1rem;
 
   &::before {
