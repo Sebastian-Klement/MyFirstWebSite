@@ -6,10 +6,6 @@
   padding-bottom: 3rem;
 }
 
-.about__container {
-  @include make-container();
-}
-
 .about__img {
   $-img-size: 30rem;
 
