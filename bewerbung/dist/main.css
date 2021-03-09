@@ -599,8 +599,8 @@ html {
 }
 
 .about__img {
-  width: 30rem;
-  height: 30rem;
+  width: 35rem;
+  height: 35rem;
   object-fit: cover;
   float: left;
   margin-right: 4rem;
@@ -611,26 +611,26 @@ html {
 }
 @media (max-width: 75em) {
   .about__img {
-    width: 27rem;
-    height: 27rem;
+    width: 31.5rem;
+    height: 31.5rem;
   }
 }
 @media (max-width: 62em) {
   .about__img {
-    width: 24rem;
-    height: 24rem;
+    width: 28rem;
+    height: 28rem;
   }
 }
 @media (max-width: 48em) {
   .about__img {
-    width: 15rem;
-    height: 15rem;
+    width: 17.5rem;
+    height: 17.5rem;
   }
 }
 @media (max-width: 36em) {
   .about__img {
-    width: 12rem;
-    height: 12rem;
+    width: 14rem;
+    height: 14rem;
   }
 }
 
