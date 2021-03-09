@@ -7,8 +7,8 @@
 
 .motivation__col-txt {
   float: left;
+  text-align: justify;
   width: 33.3%;
-  padding-right: 4rem;
 
   @media (max-width: $breakpint-large) {
     padding-right: 3rem;
@@ -20,7 +20,7 @@
   @media (max-width: $breakpint-small) {
     width: 100%;
     float: none;
-    padding-bottom:  2rem;
+    padding-bottom: 2rem;
   }
 }
 .motivation__txt-heading {
@@ -54,7 +54,6 @@
   @media (max-width: $breakpint-medium) {
     width: 50%;
     height: clamp(10rem, calc(25vw + 10rem), 36rem);
-
   }
   @media (max-width: $breakpint-small) {
     width: 80%;

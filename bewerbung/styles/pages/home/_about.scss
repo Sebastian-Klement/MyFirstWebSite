@@ -6,6 +6,10 @@
   padding-bottom: 3rem;
 }
 
+.about__container {
+  @include make-container();
+}
+
 .about__img {
   $-img-size: 30rem;
 
@@ -39,27 +43,9 @@
   }
 }
 
-.about__heading {
-  text-transform: uppercase;
-  color: $color-secondary;
-  font-weight: 400;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.about__subheading {
-  text-transform: uppercase;
-  color: #555657;
-  font-weight: 300;
-  font-size: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 .about__text {
   color: $color-secondary;
-  padding-top: 0.5rem;
-  text-shadow: 1.0rem;
+  padding-top: 2.5rem;
 
   &::before {
     content: "";
@@ -67,7 +53,7 @@
     height: 0.25rem;
     width: 4rem;
     margin-left: 1rem;
-    background-color: $color-secondary;
+    background-color: $color-secondary-dark;
   }
 
   @media (max-width: $breakpint-large) {
@@ -80,10 +66,25 @@
     height: 0.25rem;
     width: 4rem;
     margin-left: 1rem;
-    background-color: $color-secondary;
+    background-color: $color-secondary-dark;
   }
 }
 
+.about__heading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.about__subheading {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 .about__paragraph {
   font-weight: 300;
   margin-bottom: 1rem;
@@ -91,9 +92,9 @@
 
 .about__quote {
   font-style: italic;
-  font-weight: 200;
-  font-size: 0.95rem;
-  margin-bottom: 1.5rem;
+  font-weight: 300;
+  font-size: 1rem;
+  margin-bottom: 1rem;
 
   &::before {
     content: '"';
