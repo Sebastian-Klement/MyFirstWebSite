@@ -73,10 +73,10 @@
 
   position: absolute;
   white-space: nowrap;
-  top: 0.5rem;
-  left: 2rem;
+  top: 0.3rem;
+  left: 2.5rem;
   z-index: 1;
-  width: 16rem;
+  width: 17rem;
   text-align: center;
 
   &:hover {
@@ -122,7 +122,7 @@
 .footer__footer-list {
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
 
   @media (max-width: $breakpint-small) {

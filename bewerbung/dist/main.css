@@ -267,10 +267,10 @@ html {
   border-bottom-right-radius: 1rem;
   position: absolute;
   white-space: nowrap;
-  top: 0.5rem;
-  left: 2rem;
+  top: 0.3rem;
+  left: 2.5rem;
   z-index: 1;
-  width: 16rem;
+  width: 17rem;
   text-align: center;
 }
 .footer__contact-item-link:hover {
@@ -312,7 +312,7 @@ html {
 .footer__footer-list {
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
 }
 @media (max-width: 48em) {
@@ -599,8 +599,8 @@ html {
 }
 
 .about__img {
-  width: 35rem;
-  height: 35rem;
+  width: 30rem;
+  height: 30rem;
   object-fit: cover;
   float: left;
   margin-right: 4rem;
@@ -611,36 +611,36 @@ html {
 }
 @media (max-width: 75em) {
   .about__img {
-    width: 31.5rem;
-    height: 31.5rem;
+    width: 27rem;
+    height: 27rem;
   }
 }
 @media (max-width: 62em) {
   .about__img {
-    width: 28rem;
-    height: 28rem;
+    width: 24rem;
+    height: 24rem;
   }
 }
 @media (max-width: 48em) {
   .about__img {
-    width: 17.5rem;
-    height: 17.5rem;
+    width: 15rem;
+    height: 15rem;
   }
 }
 @media (max-width: 36em) {
   .about__img {
-    width: 14rem;
-    height: 14rem;
+    width: 12rem;
+    height: 12rem;
   }
 }
 
 .about__heading {
   text-transform: uppercase;
   color: #555657;
-  font-weight: 500;
-  font-size: 2rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .about__subheading {
@@ -648,13 +648,13 @@ html {
   color: #555657;
   font-weight: 300;
   font-size: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
 .about__text {
   color: #555657;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   text-shadow: 1rem;
 }
 .about__text::before {
