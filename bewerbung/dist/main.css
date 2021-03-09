@@ -637,7 +637,7 @@ html {
 .about__heading {
   text-transform: uppercase;
   color: #555657;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -646,7 +646,7 @@ html {
 .about__subheading {
   text-transform: uppercase;
   color: #555657;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -667,7 +667,7 @@ html {
 }
 @media (max-width: 75em) {
   .about__text {
-    padding-top: 1rem;
+    padding-top: 0rem;
   }
 }
 .about__text::after {
