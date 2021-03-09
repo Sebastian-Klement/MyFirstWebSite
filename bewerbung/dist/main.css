@@ -267,10 +267,10 @@ html {
   border-bottom-right-radius: 1rem;
   position: absolute;
   white-space: nowrap;
-  top: 0.3rem;
+  top: 0.4rem;
   left: 2.5rem;
   z-index: 1;
-  width: 18rem;
+  width: 20rem;
   text-align: center;
 }
 .footer__contact-item-link:hover {
