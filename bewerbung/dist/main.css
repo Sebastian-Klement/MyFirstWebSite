@@ -636,7 +636,7 @@ html {
 
 .about__text {
   color: #555657;
-  padding-top: 2.5rem;
+  padding-top: 0.5rem;
 }
 .about__text::before {
   content: "";
