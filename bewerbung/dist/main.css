@@ -223,6 +223,11 @@ html {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 48em) {
+  .footer__logo-col {
+    padding-bottom: 1rem;
+  }
+}
 
 .footer__heading {
   color: white;
@@ -267,10 +272,10 @@ html {
   border-bottom-right-radius: 1rem;
   position: absolute;
   white-space: nowrap;
-  top: 0.3rem;
+  top: 0.4rem;
   left: 2.5rem;
   z-index: 1;
-  width: 17rem;
+  width: 18rem;
   text-align: center;
 }
 .footer__contact-item-link:hover {
@@ -607,7 +612,7 @@ html {
   border-radius: 10000px;
   shape-outside: circle(15rem at 50% 50%);
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
-  filter: grayscale(50%) contrast(150%) brightness(60%);
+  filter: grayscale(50%);
 }
 @media (max-width: 75em) {
   .about__img {
@@ -640,6 +645,7 @@ html {
   font-weight: 400;
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .about__subheading {
@@ -653,7 +659,7 @@ html {
 
 .about__text {
   color: #555657;
-  padding-top: 0.5rem;
+  padding-top: 1rem;
   text-shadow: 1rem;
 }
 .about__text::before {
@@ -669,14 +675,6 @@ html {
     padding-top: 0rem;
   }
 }
-.about__text::after {
-  content: "";
-  display: inline-block;
-  height: 0.25rem;
-  width: 4rem;
-  margin-left: 1rem;
-  background-color: #555657;
-}
 
 .about__paragraph {
   font-weight: 300;
@@ -685,8 +683,8 @@ html {
 
 .about__quote {
   font-style: italic;
-  font-weight: 200;
-  font-size: 0.95rem;
+  font-weight: 300;
+  font-size: 0.75rem;
   margin-bottom: 1.5rem;
 }
 .about__quote::before {
