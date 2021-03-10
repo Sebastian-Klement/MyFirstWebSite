@@ -356,8 +356,8 @@ html {
 
 .motivation__col-txt {
   float: left;
+  text-align: justify;
   width: 33.3%;
-  padding-right: 4rem;
 }
 @media (max-width: 75em) {
   .motivation__col-txt {
@@ -639,6 +639,7 @@ html {
   }
 }
 
+<<<<<<< HEAD
 .about__heading {
   text-transform: uppercase;
   color: #555657;
@@ -657,10 +658,11 @@ html {
   margin-bottom: 1rem;
 }
 
+=======
+>>>>>>> e164c02cb710be760ec495eb462b87dd13f42beb
 .about__text {
   color: #555657;
-  padding-top: 1rem;
-  text-shadow: 1rem;
+  padding-top: 0.5rem;
 }
 .about__text::before {
   content: "";
@@ -668,13 +670,40 @@ html {
   height: 0.25rem;
   width: 4rem;
   margin-left: 1rem;
-  background-color: #555657;
+  background-color: #191a1b;
 }
 @media (max-width: 75em) {
   .about__text {
     padding-top: 0rem;
   }
 }
+<<<<<<< HEAD
+=======
+.about__text::after {
+  content: "";
+  display: inline-block;
+  height: 0.25rem;
+  width: 4rem;
+  margin-left: 1rem;
+  background-color: #191a1b;
+}
+
+.about__heading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.about__subheading {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+>>>>>>> e164c02cb710be760ec495eb462b87dd13f42beb
 
 .about__paragraph {
   font-weight: 300;
@@ -684,8 +713,13 @@ html {
 .about__quote {
   font-style: italic;
   font-weight: 300;
+<<<<<<< HEAD
   font-size: 0.75rem;
   margin-bottom: 1.5rem;
+=======
+  font-size: 1rem;
+  margin-bottom: 1rem;
+>>>>>>> e164c02cb710be760ec495eb462b87dd13f42beb
 }
 .about__quote::before {
   content: '"';

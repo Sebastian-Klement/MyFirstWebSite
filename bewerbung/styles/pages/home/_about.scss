@@ -39,6 +39,7 @@
   }
 }
 
+<<<<<<< HEAD
 .about__heading {
   text-transform: uppercase;
   color: $color-secondary;
@@ -57,10 +58,11 @@
   margin-bottom: 1rem;
 }
 
+=======
+>>>>>>> e164c02cb710be760ec495eb462b87dd13f42beb
 .about__text {
   color: $color-secondary;
-  padding-top: 1rem;
-  text-shadow: 1rem;
+  padding-top: 0.5rem;
 
   &::before {
     content: "";
@@ -68,14 +70,41 @@
     height: 0.25rem;
     width: 4rem;
     margin-left: 1rem;
-    background-color: $color-secondary;
+    background-color: $color-secondary-dark;
   }
 
   @media (max-width: $breakpint-large) {
     padding-top: 0rem;
+<<<<<<< HEAD
+=======
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 0.25rem;
+    width: 4rem;
+    margin-left: 1rem;
+    background-color: $color-secondary-dark;
+>>>>>>> e164c02cb710be760ec495eb462b87dd13f42beb
   }
 }
 
+.about__heading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.about__subheading {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 .about__paragraph {
   font-weight: 300;
   margin-bottom: 1rem;
@@ -84,8 +113,13 @@
 .about__quote {
   font-style: italic;
   font-weight: 300;
+<<<<<<< HEAD
   font-size: 0.75rem;
   margin-bottom: 1.5rem;
+=======
+  font-size: 1rem;
+  margin-bottom: 1rem;
+>>>>>>> e164c02cb710be760ec495eb462b87dd13f42beb
 
   &::before {
     content: '"';
