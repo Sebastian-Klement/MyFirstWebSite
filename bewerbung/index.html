@@ -10,6 +10,12 @@
   </head>
 
   <body>
+    <input
+      type="checkbox"
+      class="sidenav__opened"
+      id="sidenav__opened"
+      autocomplete="off"
+    />
     <header class="header">
       <div class="header__container">
         <nav class="nav">
@@ -26,8 +32,17 @@
                 </svg>
               </a>
             </li>
+            <li class="nav__list-item nav__list-item--mobile-hidden">
+              <a class="nav__list-item-link" href="#motivation">Motivation</a>
+            </li>
+            <li class="nav__list-item nav__list-item--mobile-hidden">
+              <a class="nav__list-item-link" href="#about">&Uuml;ber mich</a>
+            </li>
+            <li class="nav__list-item nav__list-item--mobile-hidden">
+              <a class="nav__list-item-link" href="#footer">Kontakt</a>
+            </li>
             <li class="nav__list-item nav__list-item--menu">
-              <a class="nav__list-item-link" href="#">
+              <label class="nav__list-item-link" for="sidenav__opened">
                 <svg class="icon" viewBox="0 0 512 512">
                   <path
                     d="M358.06,193.61H153.94c-3.83,0-6.93-3.1-6.93-6.93s3.1-6.93,6.93-6.93h204.13c3.83,0,6.93,3.1,6.93,6.93
@@ -47,7 +62,7 @@
                               S143.02,460.9,256,460.9S460.9,368.98,460.9,256S368.98,51.1,256,51.1z"
                   />
                 </svg>
-              </a>
+              </label>
             </li>
           </ul>
         </nav>
@@ -60,23 +75,58 @@
         </div>
       </div>
     </header>
-    <section class="motivation">
-      <div class="container">
+    <section class="sidenav">
+      <label for="sidenav__opened" class="sidenav__background"></label>
+      <div class="sidenav__container">
+        <label for="sidenav__opened" class="sidenav__close">
+          <svg class="icon" viewBox="0 0 16 16">
+            <path
+              d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"
+            />
+            <path
+              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+        </label>
+        <nav class="sidenav__nav">
+          <ul>
+            <li class="sidenav__list-item">
+              <a class="sidenav__list-item-link" href="#">Anfang</a>
+            </li>
+            <li class="sidenav__list-item">
+              <a class="sidenav__list-item-link" href="#motivation"
+                >Motivation</a
+              >
+            </li>
+            <li class="sidenav__list-item">
+              <a class="sidenav__list-item-link" href="#about"
+                >&Uuml;ber mich</a
+              >
+            </li>
+            <li class="sidenav__list-item">
+              <a class="sidenav__list-item-link" href="#footer">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section class="motivation" id="motivation" ;>
+      <div class="motivation__container">
         <div class="motivation__col-txt">
           <h2 class="motivation__txt-heading">Hallo lieber Besucher</h2>
-
           <p class="motivation__txt-paragraph">
-            Diese Webseite möchte ich nutzen, um dir einen ersten Eindruck von
+            Diese Webseite möchte ich nicht nur nutzen um mich persönlich bei
+            dir vorzustellen, sondern um dir auch einen ersten Eindruck von
             meinen Fähigkeiten und Kenntnissen in der Web-Entwickung zu geben.
-            Ich habe mich bewusst dazu entschieden diese Seite in HTML und
+            Ich habe mich bewusst dazu entschieden, diese Seite in HTML und
             SCSS/CSS zu erstellen und finde es sehr spannend auf diese Weise ein
-            modernes Design zu gestallten. Des Weiteren habe ich diese Seite
-            responsive gestaltet um auf den gängigen mobilen Geräten eine schöne
-            Darstellung zu erhalten. Ich möchte im Laufe der Zeit meine Webseite
-            weiter&shy;entwickeln. Daher führt der ein oder andere Link noch
-            nirgends hin. <br />In meinem Repository auf GitHub findest du den
-            Quellcode für diese Seite. Über ein Feedback würde ich mich sehr
-            freuen.
+            modernes Design mit einer Menge an tollen Funktionen zu gestallten.
+            Des Weiteren habe ich diese Seite responsive gestaltet um auf den
+            gängigen mobilen Geräten eine schöne Darstellung zu erhalten. Ich
+            möchte im Laufe der Zeit meine Webseite weiter&shy;entwickeln. Daher
+            führt der ein oder andere Link noch nirgends hin. <br />In meinem
+            Repository auf GitHub findest du den Quellcode für diese Seite. Über
+            ein Feedback würde ich mich sehr freuen.
           </p>
         </div>
         <div class="motivation__col-img">
@@ -88,11 +138,6 @@
           <img
             class="motivation__img motivation__img--2nd"
             src="img/motivation/Sebastian-white-shirt.jpg"
-            alt=""
-          />
-          <img
-            class="motivation__img motivation__img--3rd"
-            src="img/motivation/Sebastian-grey-tshirt.jpg"
             alt=""
           />
           <img
@@ -232,19 +277,15 @@
         </div>
       </div>
     </section> -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
-        <img
-          class="about__img"
-          src="img/motivation/Sebastian-white-shirt.jpg"
-          alt=""
-        />
+        <img class="about__img" src="img/about/Sebastian-45.jpg" alt="" />
         <div class="about__text">
-          <h3 class="about__heading">&Uuml;ber mich</h3>
+          <h3 class="about__heading">Mein Name ist Sebastian</h3>
           <p class="about__paragraph">
-            Ich heiße Sebastian und bin 34 Jahre alt. Zur Zeit studiere ich
-            Medien&shy;informatik (B. Sc.) im 6. Semester an der Technischen
-            Hochschule Georg Simon Ohm in N&uuml;rnberg.
+            Ich bin 34 Jahre alt und starte aktuell beruflich neu durch. So
+            studiere ich Medien&shy;informatik (B. Sc.) im 6. Semester an der
+            Technischen Hochschule Georg Simon Ohm in N&uuml;rnberg.
           </p>
           <p class="about__paragraph">
             Zu Beginn meiner beruflichen Laufbahn absolvierte ich erfolgreich
@@ -258,6 +299,12 @@
             Realisierung von Projekten mit Einplatienen&shy;computern und
             Mikro&shy;controllern.
           </p>
+          <p class="about__paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
           <h4 class="about__subheading">&Uuml;brigens</h4>
           <blockquote class="about__quote">
             Wahnsinn ist, immer wieder das Gleiche zu tun und andere Ergebnisse
@@ -266,7 +313,7 @@
         </div>
       </div>
     </section>
-    <section class="footer">
+    <section class="footer" id="footer">
       <div class="footer__container">
         <div class="footer__text-col">
           <h3 class="footer__heading">sebastian klement</h3>

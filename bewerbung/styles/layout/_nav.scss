@@ -17,8 +17,10 @@
 }
 
 .nav__list-item-link {
+  cursor: pointer;
   color: white;
   text-decoration: none;
+  text-transform: uppercase;
   padding: 0.25rem 0.25rem 0.25rem 0.25rem;
   margin-top: 2rem;
   margin-left: 2rem;
@@ -31,9 +33,14 @@
   }
 
   .nav__list-item--menu & {
+    display: none;
     margin-top: 0.4rem;
     padding-right: 0;
     margin-right: 0;
+
+    @media (max-width: $breakpint-medium) {
+      display: block;
+    }
     &:hover {
       border-bottom: none;
       color: rgb(200, 200, 200);
