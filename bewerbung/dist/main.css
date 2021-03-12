@@ -29,11 +29,6 @@ body {
   color: #424242;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    filter: invert(1);
-  }
-}
 .container {
   max-width: 75rem;
   margin: 0px auto;
@@ -500,7 +495,7 @@ body {
 }
 
 .motivation__txt-heading {
-  margin-top: 4rem;
+  margin-top: 2rem;
   color: #555657;
   font-weight: 500;
   font-size: 2rem;
