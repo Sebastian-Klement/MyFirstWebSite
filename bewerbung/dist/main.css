@@ -24,6 +24,16 @@ html {
   font-family: "Jost", sans-serif;
 }
 
+body {
+  background: #edf2ef;
+  color: #424242;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    filter: invert(1);
+  }
+}
 .container {
   max-width: 75rem;
   margin: 0px auto;
@@ -194,7 +204,7 @@ html {
 
 .footer {
   background-color: #767879;
-  padding: 3rem 0;
+  padding: 4rem 0;
 }
 
 .footer__container {
@@ -352,16 +362,20 @@ html {
 }
 
 .sidenav {
-  display: none;
+  display: block;
   position: fixed;
   z-index: 100;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  transition: width 0s linear 1s, height 0s linear 1s;
 }
 .sidenav__opened:checked ~ .sidenav {
-  display: block;
+  transition: width 0s linear 0s, height 0s linear 0s;
+  width: 100%;
+  height: 100%;
 }
 
 .sidenav__background {
@@ -372,6 +386,11 @@ html {
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.sidenav__opened:checked ~ .sidenav .sidenav__background {
+  opacity: 1;
 }
 
 .sidenav__container {
@@ -382,7 +401,12 @@ html {
   width: 15rem;
   max-width: 100vw;
   background-color: #767879;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7);
+  transform: translate(100%, 0);
+  will-change: transform;
+  transition: transform 1s ease-in-out;
+}
+.sidenav__opened:checked ~ .sidenav .sidenav__container {
+  transform: translate(0, 0);
 }
 
 .sidenav__close {
@@ -408,7 +432,7 @@ html {
 .sidenav__list-item-link {
   font-size: 1.5rem;
   font-weight: 300;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 2rem;
   display: block;
   text-decoration: none;
   color: #d2d2d2;
@@ -419,74 +443,6 @@ html {
   background-color: white;
   color: #191a1b;
   font-weight: 500;
-}
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #a39f9f;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: yellow;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.body {
-  background: green;
-}
-
-.switch__input:checked + .body {
-  background: #292f36;
-}
-
-.switch__input:checked + .slider {
-  background: #292f36;
-}
-
-.switch__input:focus + .slider {
-  box-shadow: 0 0 1px black;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
 }
 
 .icon {
@@ -500,8 +456,7 @@ input:checked + .slider:before {
 }
 
 .motivation {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  padding: 0rem 0rem 5rem 0rem;
 }
 
 .motivation__container {
@@ -764,9 +719,7 @@ input:checked + .slider:before {
 }
 
 .about {
-  background-color: white;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding: 4rem 0;
 }
 
 .about__img {

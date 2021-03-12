@@ -1,8 +1,8 @@
 @use "../../abstract" as *;
+@use "sass:color";
 
 .motivation {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  padding: 0rem 0rem 5rem 0rem;
 }
 
 .motivation__container {

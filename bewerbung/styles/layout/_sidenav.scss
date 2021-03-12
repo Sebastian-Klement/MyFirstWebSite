@@ -6,18 +6,22 @@
 }
 
 .sidenav {
-  display: none;
-
-  .sidenav__opened:checked ~ & {
-    display: block;
-  }
-
+  display: block;
   position: fixed;
   z-index: 100;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+
+  transition: width 0s linear 1s, height 0s linear 1s;
+
+  .sidenav__opened:checked ~ & {
+    transition: width 0s linear 0s, height 0s linear 0s;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .sidenav__background {
@@ -28,6 +32,13 @@
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.75);
+
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+
+  .sidenav__opened:checked ~ .sidenav & {
+    opacity: 1;
+  }
 }
 
 .sidenav__container {
@@ -38,7 +49,14 @@
   width: 15rem;
   max-width: 100vw;
   background-color: $color-secondary-light;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7);
+
+  transform: translate(100%, 0);
+  will-change: transform;
+  transition: transform 1s ease-in-out;
+
+  .sidenav__opened:checked ~ .sidenav & {
+    transform: translate(0, 0);
+  }
 }
 
 .sidenav__close {
@@ -65,7 +83,7 @@
 .sidenav__list-item-link {
   font-size: 1.5rem;
   font-weight: 300;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 2rem;
   display: block;
   text-decoration: none;
   color: rgb(210, 210, 210);
