@@ -80,12 +80,6 @@
   transform: scale(1);
   transition: filter ease-in-out 0.5s, transform ease-in-out 0.5s;
 
-  &--3rd {
-    width: 55%;
-    right: 7rem;
-    top: 2rem;
-    z-index: 1;
-  }
   &--4th {
     width: 55%;
     right: 4rem;

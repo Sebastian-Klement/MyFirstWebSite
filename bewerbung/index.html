@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="Description"
+      content="Author: Sebastian Klement, City: Nuernberg, Country: Germany"
+    />
     <title>Willkommen auf meiner Website</title>
 
     <link rel="shortcut icon" href="icon/myicon.ico" />
@@ -279,7 +283,19 @@
     </section> -->
     <section class="about" id="about">
       <div class="container">
-        <img class="about__img" src="img/about/Sebastian-45.jpg" alt="" />
+        <div class="about__slideshow">
+          <img class="about__img" src="img/about/Sebastian-45.jpg" alt="" />
+          <img
+            class="about__img about__img--slideshow about__img--slideshow-1"
+            src="img/motivation/Sebastian-white-shirt.jpg"
+            alt=""
+          />
+          <img
+            class="about__img about__img--slideshow about__img--slideshow-2"
+            src="img/motivation/Sebastian-grey-tshirt.jpg"
+            alt=""
+          />
+        </div>
         <div class="about__text">
           <h3 class="about__heading">Mein Name ist Sebastian</h3>
           <p class="about__paragraph">
@@ -308,7 +324,7 @@
           <h4 class="about__subheading">&Uuml;brigens</h4>
           <blockquote class="about__quote">
             Wahnsinn ist, immer wieder das Gleiche zu tun und andere Ergebnisse
-            zu erwarten! <br />(Albert Einstein, vor langer Zeit)
+            zu erwarten! <br />(Vermutlich Albert Einstein, vor langer Zeit)
           </blockquote>
         </div>
       </div>
@@ -336,7 +352,7 @@
               >contact@sebastian-klement.de</a
             >
           </div>
-          <div class="footer__contact-item">
+          <!-- <div class="footer__contact-item">
             <div class="footer__contact-item-icon">
               <svg class="icon" viewBox="0 0 16 16">
                 <path
@@ -350,7 +366,7 @@
               target="_blank"
               >coming soon</a
             >
-          </div>
+          </div> -->
           <div class="footer__contact-item">
             <div class="footer__contact-item-icon">
               <svg class="icon" viewBox="0 0 16 16">
@@ -363,6 +379,7 @@
               class="footer__contact-item-link"
               href="https://www.linkedin.com/in/sebastian-klement-685a6b17b"
               target="_blank"
+              rel="noopener"
               >LinkedIn</a
             >
           </div>
@@ -378,6 +395,7 @@
               class="footer__contact-item-link"
               href="https://github.com/Sebastian-Klement/MyFirstWebSite"
               target="_blank"
+              rel="noopener"
               >GitHub</a
             >
           </div>
