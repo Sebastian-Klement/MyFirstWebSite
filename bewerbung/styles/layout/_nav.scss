@@ -10,10 +10,6 @@
       display: none;
     }
   }
-  &--menu {
-    float: right;
-    font-size: 3rem;
-  }
 }
 
 .nav__list-item-link {
@@ -32,20 +28,6 @@
     border-bottom: 0.15rem solid $color-primary;
   }
 
-  .nav__list-item--menu & {
-    display: none;
-    margin-top: 0.4rem;
-    padding-right: 0;
-    margin-right: 0;
-
-    @media (max-width: $breakpint-medium) {
-      display: block;
-    }
-    &:hover {
-      border-bottom: none;
-      color: rgb(200, 200, 200);
-    }
-  }
   &--logo {
     margin-top: 0.9rem;
     padding-left: 0;

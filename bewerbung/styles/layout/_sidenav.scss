@@ -5,6 +5,28 @@
   display: none;
 }
 
+.sidenav__burger-icon {
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  color: white;
+  text-shadow: 0 0 0.5rem black;
+
+  font-size: 4rem;
+  right: 1rem;
+  top: 1rem;
+
+  @media (max-width: $breakpint-medium) {
+    display: block;
+  }
+
+  &:hover {
+    text-decoration: none;
+    border-bottom: none;
+    color: rgb(240, 240, 240);
+  }
+}
+
 .sidenav {
   display: block;
   position: fixed;
