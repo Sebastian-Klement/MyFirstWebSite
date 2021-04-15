@@ -2,11 +2,12 @@
 @use "sass:color";
 
 .footer {
-  height: 40rem;
-  min-height: calc(18rem + 32vw);
-  padding: 10rem 0 1rem 0;
+  height: 36.5rem;
+  //min-height: calc(10rem + 30vw);
+  padding: 8rem 0 1rem 0;
+  margin-top:4rem;
 
-  background-image: linear-gradient(-5.71deg, transparent 50.1%, #edf2ef 49.9%);
+  background-image: linear-gradient(-5.0deg, transparent 50.1%, #edf2ef 49.9%);
   background-color: $color-secondary-light;
   background-repeat: no-repeat, no-repeat;
   background-position: center 0%, center center;
@@ -25,15 +26,13 @@
 }
 
 .footer__text-col {
+  margin: 5rem 0 0 0;
   flex: 0 0 50%;
 }
 
 .footer__logo-col {
-  flex: 0 0 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+  margin-left: 5rem;
+ 
   @media (max-width: $breakpint-small) {
     padding-bottom: 1rem;
   }
@@ -94,40 +93,6 @@
     background-color: $color-secondary-dark;
     transition: 1s ease-in-out;
   }
-}
-
-.footer__logo-container {
-  font-size: 19rem;
-  color: white;
-  padding: 0.05em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-image: linear-gradient(
-    135deg,
-    $color-secondary 0%,
-    $color-primary 100%
-  );
-  border-radius: 10000px;
-  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
-
-  @media (max-width: $breakpint-medium) {
-    font-size: 12rem;
-  }
-
-  @media (max-width: $breakpint-small) {
-    font-size: 10rem;
-  }
-}
-
-.footer__logo-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.1em;
-  border: 0.025em solid white;
-  border-radius: 10000px;
 }
 
 .footer__footer-list {

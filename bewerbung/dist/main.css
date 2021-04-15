@@ -19,9 +19,14 @@
   box-sizing: border-box;
 }
 
+main {
+  position: relative;
+}
+
 html {
   font-size: 100%;
   font-family: "Jost", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -47,8 +52,8 @@ body {
 
 .header {
   height: 35rem;
-  min-height: calc(13rem + 32vw);
-  background-image: linear-gradient(-5.71deg, #edf2ef 49.9%, transparent 50.1%), url("../img/header/Sebastian-35.jpg");
+  min-height: calc(11rem + 32vw);
+  background-image: linear-gradient(-5deg, #edf2ef 49.9%, transparent 50.1%), url("../img/header/Sebastian-35.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: center 100%, center center;
   background-size: 100vw 10vw, cover;
@@ -85,7 +90,7 @@ body {
 
 .header__heading-main {
   font-weight: 700;
-  padding-top: 12rem;
+  padding-top: 11rem;
   line-height: 92%;
   font-size: 6rem;
   text-align: center;
@@ -179,10 +184,10 @@ body {
 }
 
 .footer {
-  height: 40rem;
-  min-height: calc(18rem + 32vw);
-  padding: 10rem 0 1rem 0;
-  background-image: linear-gradient(-5.71deg, transparent 50.1%, #edf2ef 49.9%);
+  height: 36.5rem;
+  padding: 8rem 0 1rem 0;
+  margin-top: 4rem;
+  background-image: linear-gradient(-5deg, transparent 50.1%, #edf2ef 49.9%);
   background-color: #767879;
   background-repeat: no-repeat, no-repeat;
   background-position: center 0%, center center;
@@ -214,14 +219,12 @@ body {
 }
 
 .footer__text-col {
+  margin: 5rem 0 0 0;
   flex: 0 0 50%;
 }
 
 .footer__logo-col {
-  flex: 0 0 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: 5rem;
 }
 @media (max-width: 48em) {
   .footer__logo-col {
@@ -281,37 +284,6 @@ body {
 .footer__contact-item-link:hover {
   background-color: #191a1b;
   transition: 1s ease-in-out;
-}
-
-.footer__logo-container {
-  font-size: 19rem;
-  color: white;
-  padding: 0.05em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: linear-gradient(135deg, #555657 0%, #373839 100%);
-  border-radius: 10000px;
-  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
-}
-@media (max-width: 62em) {
-  .footer__logo-container {
-    font-size: 12rem;
-  }
-}
-@media (max-width: 48em) {
-  .footer__logo-container {
-    font-size: 10rem;
-  }
-}
-
-.footer__logo-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.1em;
-  border: 0.025em solid white;
-  border-radius: 10000px;
 }
 
 .footer__footer-list {
@@ -446,6 +418,27 @@ body {
   background-color: white;
   color: #191a1b;
   font-weight: 500;
+}
+
+.backtotop {
+  position: sticky;
+  top: 30rem;
+}
+
+.backtotop__icon-link {
+  cursor: pointer;
+  color: #555657;
+  text-shadow: 0 0 0.5rem black;
+  font-size: 3rem;
+  position: absolute;
+  right: 0.5rem;
+  top: 1rem;
+  z-index: 10;
+}
+.backtotop__icon-link:hover {
+  text-decoration: none;
+  border-bottom: none;
+  color: white;
 }
 
 .icon {
@@ -1033,6 +1026,22 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+}
+
+.skills_container {
+  max-width: 75rem;
+  margin: 0px auto;
+  padding: 0 2rem;
+}
+.skills_container::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+@media (max-width: 48em) {
+  .skills_container {
+    padding: 0 1rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

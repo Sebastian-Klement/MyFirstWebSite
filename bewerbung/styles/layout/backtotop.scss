@@ -1,0 +1,24 @@
+@use "../abstract" as *;
+@use "sass:color";
+
+.backtotop {
+  position: sticky;
+  top: 30rem;
+}
+
+.backtotop__icon-link {
+  cursor: pointer;
+  color: $color-secondary;
+  text-shadow: 0 0 0.5rem black;
+  font-size: 3rem;
+
+  position: absolute;
+  right: 0.5rem;
+  top: 1rem;
+  z-index: 10;
+  &:hover {
+    text-decoration: none;
+    border-bottom: none;
+    color: white;
+  }
+}
