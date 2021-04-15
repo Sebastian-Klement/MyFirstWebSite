@@ -425,15 +425,17 @@ body {
   top: 30rem;
 }
 
+.backtotop__icon {
+  position: absolute;
+  right: 0.5rem;
+  top: 1rem;
+}
+
 .backtotop__icon-link {
   cursor: pointer;
   color: #555657;
   text-shadow: 0 0 0.5rem black;
   font-size: 3rem;
-  position: absolute;
-  right: 0.5rem;
-  top: 1rem;
-  z-index: 10;
 }
 .backtotop__icon-link:hover {
   text-decoration: none;
