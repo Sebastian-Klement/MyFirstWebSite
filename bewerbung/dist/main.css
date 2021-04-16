@@ -229,6 +229,7 @@ body {
 @media (max-width: 48em) {
   .footer__logo-col {
     padding-bottom: 1rem;
+    margin-left: 0;
   }
 }
 
