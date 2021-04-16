@@ -34,6 +34,29 @@ body {
   color: #424242;
 }
 
+.backtotop {
+  position: sticky;
+  top: 30rem;
+}
+
+.backtotop__icon {
+  position: absolute;
+  right: 0.5rem;
+  top: 1rem;
+}
+
+.backtotop__icon-link {
+  cursor: pointer;
+  color: #555657;
+  text-shadow: 0 0 0.5rem black;
+  font-size: 3rem;
+}
+.backtotop__icon-link:hover {
+  text-decoration: none;
+  border-bottom: none;
+  color: white;
+}
+
 .container {
   max-width: 75rem;
   margin: 0px auto;
@@ -419,29 +442,6 @@ body {
   background-color: white;
   color: #191a1b;
   font-weight: 500;
-}
-
-.backtotop {
-  position: sticky;
-  top: 30rem;
-}
-
-.backtotop__icon {
-  position: absolute;
-  right: 0.5rem;
-  top: 1rem;
-}
-
-.backtotop__icon-link {
-  cursor: pointer;
-  color: #555657;
-  text-shadow: 0 0 0.5rem black;
-  font-size: 3rem;
-}
-.backtotop__icon-link:hover {
-  text-decoration: none;
-  border-bottom: none;
-  color: white;
 }
 
 .icon {
