@@ -4,12 +4,22 @@
 .backtotop {
   position: sticky;
   top: 30rem;
+  padding-bottom: 1rem;
+  z-index: 100;
+  
+  @media (max-width: $breakpint-medium) {
+    top: 35rem;
+  }
 }
 
 .backtotop__icon {
   position: absolute;
   right: 0.5rem;
   top: 1rem;
+
+  @media (max-width: $breakpint-medium) {
+    right: 2rem;
+  }
 }
 
 .backtotop__icon-link {

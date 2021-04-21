@@ -37,12 +37,24 @@ body {
 .backtotop {
   position: sticky;
   top: 30rem;
+  padding-bottom: 1rem;
+  z-index: 100;
+}
+@media (max-width: 62em) {
+  .backtotop {
+    top: 35rem;
+  }
 }
 
 .backtotop__icon {
   position: absolute;
   right: 0.5rem;
   top: 1rem;
+}
+@media (max-width: 62em) {
+  .backtotop__icon {
+    right: 2rem;
+  }
 }
 
 .backtotop__icon-link {
@@ -215,6 +227,12 @@ body {
   background-repeat: no-repeat, no-repeat;
   background-position: center 0%, center center;
   background-size: 100vw 10vw, cover;
+}
+@media (max-width: 62em) {
+  .footer {
+    padding: 0 0 0 0;
+    height: 41rem;
+  }
 }
 
 .footer__container {
