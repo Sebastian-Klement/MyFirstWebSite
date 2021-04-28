@@ -6,9 +6,9 @@
   top: 30rem;
   padding-bottom: 1rem;
   z-index: 100;
-  
+
   @media (max-width: $breakpint-medium) {
-    top: 35rem;
+    top: 32rem;
   }
 }
 
@@ -24,13 +24,14 @@
 
 .backtotop__icon-link {
   cursor: pointer;
-  color: $color-secondary;
+  color: white ;
   text-shadow: 0 0 0.5rem black;
   font-size: 3rem;
+  opacity: 0.75;
 
   &:hover {
     text-decoration: none;
     border-bottom: none;
-    color: white;
+    color: $color-secondary;
   }
 }

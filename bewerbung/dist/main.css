@@ -42,7 +42,7 @@ body {
 }
 @media (max-width: 62em) {
   .backtotop {
-    top: 35rem;
+    top: 32rem;
   }
 }
 
@@ -59,14 +59,15 @@ body {
 
 .backtotop__icon-link {
   cursor: pointer;
-  color: #555657;
+  color: white;
   text-shadow: 0 0 0.5rem black;
   font-size: 3rem;
+  opacity: 0.75;
 }
 .backtotop__icon-link:hover {
   text-decoration: none;
   border-bottom: none;
-  color: white;
+  color: #555657;
 }
 
 .container {
