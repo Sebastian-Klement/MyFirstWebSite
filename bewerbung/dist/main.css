@@ -4,7 +4,7 @@
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
-  src: url("../../font/Jost-VariableFont_wght.ttf");
+  src: url("../../font/Jost-VariableFont_wght.ttf") format("truetype");
 }
 @font-face {
   font-family: "Jost";
@@ -19,10 +19,6 @@
   box-sizing: border-box;
 }
 
-main {
-  position: relative;
-}
-
 html {
   font-size: 100%;
   font-family: "Jost", sans-serif;
@@ -30,6 +26,7 @@ html {
 }
 
 body {
+  position: relative;
   background: #edf2ef;
   color: #424242;
 }
@@ -42,7 +39,7 @@ body {
 }
 @media (max-width: 62em) {
   .backtotop {
-    top: 32rem;
+    top: 30rem;
   }
 }
 
@@ -431,6 +428,7 @@ body {
   cursor: pointer;
   display: block;
   position: absolute;
+  color: orange;
   top: 1rem;
   right: 1rem;
   bottom: 1rem;

@@ -8,7 +8,7 @@
   z-index: 100;
 
   @media (max-width: $breakpint-medium) {
-    top: 32rem;
+    top: 30rem;
   }
 }
 
@@ -24,7 +24,7 @@
 
 .backtotop__icon-link {
   cursor: pointer;
-  color: white ;
+  color: white;
   text-shadow: 0 0 0.5rem black;
   font-size: 3rem;
   opacity: 0.75;

@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-main {
-  position: relative;
-}
-
 html {
   font-size: 100%;
   font-family: "Jost", sans-serif;
@@ -15,6 +11,7 @@ html {
 }
 
 body {
+  position: relative;
   background: #edf2ef;
   color: #424242;
 }
