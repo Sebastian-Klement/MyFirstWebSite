@@ -23,6 +23,7 @@
   margin-right: 2rem;
   display: block;
   text-shadow: 0 0 0.5rem black;
+  border-bottom: 0.15rem solid rgba(0,0,0,0);
 
   &:hover {
     border-bottom: 0.15rem solid $color-primary;
