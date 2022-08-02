@@ -2,7 +2,8 @@
 /robots.txt
 
 # ignore ALL imges dir
-img/about/Sebastian-45.jpg
+img/
 
 # ignore ALL html ex index.html
 *.html
+!index.html
