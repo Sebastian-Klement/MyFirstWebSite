@@ -1,5 +1,6 @@
 # ignore robots.txt
 /robots.txt
+/index.html
 
 # ignore dir img
 img/**
@@ -7,3 +8,4 @@ img/**
 # ignore ALL html ex index.html
 *.html
 !index.html
+
