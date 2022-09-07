@@ -16,15 +16,32 @@ $-half-pixel-width: 1rem /32;
 .offers__container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding-top: 4rem;
   padding-bottom: 4rem;
+  margin-top: ($-offers-card-margin * -2);
   margin-left: -$-offers-card-margin;
   margin-right: -$-offers-card-margin;
 }
 
+.offers__heading {
+  color: $color-primary;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+}
+
 .offers__card {
-  flex: 1 0 0px;
-  margin: 0 $-offers-card-margin;
+  $-card-min-width: (100% /3);
+
+  width: calc(#{$-card-min-width} - #{($-offers-card-margin * 2 + 0.001rem)});
+  // flex: 0 0 $-card-min-width;
+
+  margin: ($-offers-card-margin * 2) $-offers-card-margin 0 $-offers-card-margin;
   padding: 0 0 2rem 0;
   background-color: white;
   box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.5);
@@ -33,6 +50,17 @@ $-half-pixel-width: 1rem /32;
   border-top: $-offers-card-border-width solid $-offers-card-border-color;
 
   position: relative;
+
+  @media (max-width: $breakpint-medium) {
+    $-card-medium-width: (100% / 2);
+    width: calc(
+      #{$-card-medium-width} - #{($-offers-card-margin * 2 + 0.001rem)}
+    );
+  }
+
+  @media (max-width: $breakpint-small) {
+    width: calc(100% - #{($-offers-card-margin * 2 + 0.001rem)});
+  }
 }
 
 .offers__card::after {
@@ -103,6 +131,9 @@ $-half-pixel-width: 1rem /32;
   color: $color-secondary;
   font-size: 1.75rem;
   font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .offers__content-subheading {
   color: $color-primary;
@@ -180,7 +211,7 @@ $-half-pixel-width: 1rem /32;
 
   opacity: 0;
   transition: opacity 0.25s ease-in-out;
-  
+
   .offers__card:hover & {
     opacity: 1;
   }
