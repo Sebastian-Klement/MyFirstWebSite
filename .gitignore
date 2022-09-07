@@ -2,7 +2,7 @@
 /robots.txt
 
 # ignore img dir
-img/
+img/*
 
 # ignore ALL html
 *.html
