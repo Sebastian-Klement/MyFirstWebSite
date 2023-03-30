@@ -8,3 +8,5 @@ img/*
 *.html
 !index.html
 
+# ignore sitemap.xml
+*.xml

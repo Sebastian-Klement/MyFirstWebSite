@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www.sebastian-klement.de$
+RewriteRule ^(.*)$ https://www.sebastian-klement.de/$1 [R=301,L]
